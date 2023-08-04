@@ -43,8 +43,10 @@ public class BaseTest {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(deviceName);
-		options.setApp("C:\\Users\\User\\eclipse-workspace\\APPIUM\\src\\test\\java\\Resources\\ApiDemos-debug.apk");
+//		options.setApp("C:\\Users\\User\\eclipse-workspace\\APPIUM\\src\\test\\java\\Resources\\ApiDemos-debug.apk");
 
+		options.setApp("C:\\Users\\User\\eclipse-workspace\\APPIUM\\src\\test\\java\\Resources\\General-Store.apk");
+		
 		// Loading Testing Application on device
 		driver = new AndroidDriver(url, options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
